@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's Shopping</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="brand">
+          <button onclick="openMenu()">&#9776;</button>
+          <a href="index.html"> Let's Shopping' </a>
+        </div>
+        <div class="header-links">
+          <a href="cart.html">Cart</a>
+          <a href="signin.html">Sign in</a>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <h3>shopping categories</h3>
+        <button class="sidebar-close" onclick="closeMenu()">X</button>
+        <ul>
+          <li><a href="pants.html">Pants</a></li>
+          <li><a href="shirts.html">Shirts</a></li>
+        </ul>
+      </aside>
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+            <li class="product">
+              <img class="product-image" src="./images/d1.jpeg" alt="image" />
+              <div class="product-name">
+                <a href="product.html">Slim Shirt</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">$80</div>
+              <div class="product-rating">4.5 Stars</div>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer class="footer">all rights reserved2020</footer>
+    </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open");
+      }
+    </script>
+    <script
+      src="https://unpkg.com/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+  </body>
+</html>
