@@ -20,14 +20,18 @@
     "react-scripts": "3.4.3",
     "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "serve": "^11.3.2",
+    "yarn": "^1.22.10"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "node-sass -w src/scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w src/scss/ -o src/css/ --recursive",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
